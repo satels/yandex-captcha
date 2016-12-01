@@ -1,0 +1,15 @@
+captcha:
+  image: captcha
+  ports:
+    - 8008:80
+  volumes:
+    - /opt/data:/opt/data
+
+dev:
+  image: captcha
+  ports:
+    - 8008:80
+  volumes:
+    - /Users/satels/Yandex.Disk.localized/ostrovok/notebook/data:/opt/data
+    - /Users/satels/workspace/captcha:/var/www/captcha
+
