@@ -95,7 +95,7 @@ def get_train_word_lens_data(count):
         if num % 1000 == 0:
             logger.info('Get train word lens: complete %s', num)
 
-    imsave('/opt/data/log_train_word_lens_data' + conf.CAPTCHA_EXTENSION, X_train[0][0])
+    # imsave('/opt/data/log_train_word_lens_data' + conf.CAPTCHA_EXTENSION, X_train[0][0])
 
     return X_train, Y_train
 
@@ -135,7 +135,7 @@ def get_train_letters_data(count):
 
             Y_train.append(num)
 
-        imsave('/opt/data/log_train_letter_image' + conf.CAPTCHA_EXTENSION, train_image)
+        # imsave('/opt/data/log_train_letter_image' + conf.CAPTCHA_EXTENSION, train_image)
 
         logger.info('Get train letters %s: complete %s', letter, num)
 

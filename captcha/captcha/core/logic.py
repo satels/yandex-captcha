@@ -40,5 +40,5 @@ def get_word(image):
     test_letter_images = [get_letter_train_image(im) for im in letter_images]
     letter_keys = get_values_lst_from_net(nets['letter'], test_letter_images)
     letters = [conf.RUS_LETTERS[key] for key in letter_keys]
-    imsave('/opt/data/log_test_letter_image' + conf.CAPTCHA_EXTENSION, test_letter_images[0])
+    # imsave('/opt/data/log_test_letter_image' + conf.CAPTCHA_EXTENSION, test_letter_images[0])
     return u''.join(letters)
