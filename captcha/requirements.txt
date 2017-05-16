@@ -1,8 +1,7 @@
 falcon==1.0.0
 gunicorn==19.6.0
 lasagne==0.1
-matplotlib==1.5.3
 nolearn==0.6.0
-scikit-image==0.12.3
 numpy==1.11.1
+scikit-image==0.12.3
 ujson==1.35
