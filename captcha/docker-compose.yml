@@ -5,6 +5,8 @@ captcha:
     - 8008:80
   volumes:
     - /opt/data:/opt/data
+  environment:
+    THEANO_FLAGS: "base_compiledir=/opt/data"
 
 dev:
   image: captcha
@@ -13,4 +15,3 @@ dev:
   volumes:
     - ./data:/opt/data
     - ./captcha:/var/www/captcha
-
