@@ -113,7 +113,7 @@ def get_strip_captcha_coords(image):
         min_y = min([min(Y), min_y])
         max_y = max([max(Y), max_y])
 
-    max_x += 4  # boundary conditions
+    max_x += 2  # boundary conditions
 
     if max_x > conf.CAPTCHA_SIZE[1]:
         max_x = conf.CAPTCHA_SIZE[1]

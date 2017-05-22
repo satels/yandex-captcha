@@ -49,9 +49,7 @@ def get_word_train_image(image):
     black_image = to_black(image)
 
     min_x, max_x, min_y, max_y = get_strip_captcha_coords(black_image)
-
     striped_image = strip_captcha(to_bool(image), min_x, max_x, min_y, max_y)
-
     striped_image = framing_image(striped_image, frame_size=(60, 200))
 
     ret = resize(striped_image, (30, 100))
